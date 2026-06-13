@@ -581,15 +581,15 @@ ports:                # this is a "sequence" (list), items start with a dash
     <div class="mcq-item">
       <div class="mcq-question">Q1. What is the primary advantage of containers over traditional Virtual Machines?</div>
       <ul class="mcq-options">
-        <li>A) Containers have their own OS kernel</li>
-        <li>B) Containers are more isolated than VMs</li>
-        <li>C) Containers share the host OS kernel, making them lighter and faster to start</li>
+        <li>A) Containers share the host OS kernel, making them lighter and faster to start</li>
+        <li>B) Containers have their own OS kernel</li>
+        <li>C) Containers are more isolated than VMs</li>
         <li>D) Containers cannot run on Linux</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: C</strong><br/>
+          <strong>Answer: A</strong><br/>
           Containers share the host OS kernel, which means they don't need to boot a full OS. This makes them much lighter (MBs vs GBs) and faster to start (seconds vs minutes) compared to Virtual Machines.
         </div>
       </details>
@@ -599,14 +599,14 @@ ports:                # this is a "sequence" (list), items start with a dash
       <div class="mcq-question">Q2. Which data format is used to write Kubernetes configuration files?</div>
       <ul class="mcq-options">
         <li>A) JSON only</li>
-        <li>B) XML</li>
-        <li>C) YAML (JSON is also supported but YAML is standard)</li>
+        <li>B) YAML (JSON is also supported but YAML is standard)</li>
+        <li>C) XML</li>
         <li>D) TOML</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: C</strong><br/>
+          <strong>Answer: B</strong><br/>
           Kubernetes accepts both YAML and JSON, but YAML is the community standard because it is more human-readable. All official Kubernetes documentation shows YAML examples.
         </div>
       </details>
@@ -634,13 +634,13 @@ ports:                # this is a "sequence" (list), items start with a dash
       <ul class="mcq-options">
         <li>A) They are the same thing</li>
         <li>B) An image is a running process; a container is a stopped snapshot</li>
-        <li>C) An image is a read-only blueprint; a container is a running instance created from that image</li>
-        <li>D) Images run on Linux only; containers run on any OS</li>
+        <li>C) Images run on Linux only; containers run on any OS</li>
+        <li>D) An image is a read-only blueprint; a container is a running instance created from that image</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: C</strong><br/>
+          <strong>Answer: D</strong><br/>
           A Docker image is like a class in OOP — a static, read-only template. A container is like an instance of that class — a live, running process with its own writable layer on top. You can create many containers from the same image.
         </div>
       </details>
@@ -766,14 +766,14 @@ ports:                # this is a "sequence" (list), items start with a dash
       <div class="mcq-question">Q1. What does "K8s" stand for?</div>
       <ul class="mcq-options">
         <li>A) Kubernetes version 8</li>
-        <li>B) Kubernetes — K + 8 letters + s</li>
-        <li>C) Kube-8-Systems</li>
+        <li>B) Kube-8-Systems</li>
+        <li>C) Kubernetes — K + 8 letters + s</li>
         <li>D) An internal Google codename</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: C</strong><br/>
           "K8s" is a numeronym: K + the 8 middle letters (ubernete) + s = Kubernetes. This shorthand is widely used in the cloud-native community.
         </div>
       </details>
@@ -784,13 +784,13 @@ ports:                # this is a "sequence" (list), items start with a dash
       <ul class="mcq-options">
         <li>A) Self-healing crashed containers</li>
         <li>B) Load balancing traffic across Pods</li>
-        <li>C) Writing application source code</li>
-        <li>D) Rolling deployment updates</li>
+        <li>C) Rolling deployment updates</li>
+        <li>D) Writing application source code</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: C</strong><br/>
+          <strong>Answer: D</strong><br/>
           Kubernetes manages infrastructure concerns (scheduling, healing, scaling, networking). It has no role in authoring your application code — that's still the developer's job.
         </div>
       </details>
@@ -799,15 +799,15 @@ ports:                # this is a "sequence" (list), items start with a dash
     <div class="mcq-item">
       <div class="mcq-question">Q3. A "Cluster" in Kubernetes refers to:</div>
       <ul class="mcq-options">
-        <li>A) A group of containers inside one Pod</li>
-        <li>B) A collection of machines (nodes) managed by Kubernetes together</li>
+        <li>A) A collection of machines (nodes) managed by Kubernetes together</li>
+        <li>B) A group of containers inside one Pod</li>
         <li>C) A single physical server</li>
         <li>D) The Kubernetes dashboard UI</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: A</strong><br/>
           A cluster is the entire Kubernetes environment — it consists of a control plane (master) and one or more worker nodes that collectively run your workloads.
         </div>
       </details>
@@ -834,14 +834,14 @@ ports:                # this is a "sequence" (list), items start with a dash
       <div class="mcq-question">Q5. What is "container orchestration"?</div>
       <ul class="mcq-options">
         <li>A) Writing Dockerfiles for multiple services</li>
-        <li>B) Automating the deployment, scaling, networking, and management of containers across multiple hosts</li>
-        <li>C) Running containers locally with docker-compose</li>
-        <li>D) Monitoring CPU usage of containers on a single machine</li>
+        <li>B) Running containers locally with docker-compose</li>
+        <li>C) Monitoring CPU usage of containers on a single machine</li>
+        <li>D) Automating the deployment, scaling, networking, and management of containers across multiple hosts</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: D</strong><br/>
           Orchestration goes beyond running a single container — it handles scheduling across a fleet of machines, ensuring availability, scaling based on load, service discovery, rolling updates, and more. Kubernetes is the de-facto standard orchestrator.
         </div>
       </details>
@@ -850,15 +850,15 @@ ports:                # this is a "sequence" (list), items start with a dash
     <div class="mcq-item">
       <div class="mcq-question">Q6. Which of the following is a key benefit of splitting an application into microservices deployed on Kubernetes?</div>
       <ul class="mcq-options">
-        <li>A) Microservices require less total code than a monolith</li>
-        <li>B) Each service can be independently scaled, deployed, and updated without affecting others</li>
+        <li>A) Each service can be independently scaled, deployed, and updated without affecting others</li>
+        <li>B) Microservices require less total code than a monolith</li>
         <li>C) Kubernetes eliminates the need for any CI/CD pipeline</li>
         <li>D) All services must use the same programming language</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: A</strong><br/>
           Microservices allow independent lifecycle management. If your payment service needs more capacity, you scale just that Deployment — not the entire application. Combined with rolling updates, you can deploy new versions of individual services with zero downtime.
         </div>
       </details>
@@ -1051,14 +1051,14 @@ ports:                # this is a "sequence" (list), items start with a dash
       <div class="mcq-question">Q1. Which component is responsible for deciding WHICH node a new Pod should run on?</div>
       <ul class="mcq-options">
         <li>A) API Server</li>
-        <li>B) kubelet</li>
-        <li>C) Scheduler</li>
+        <li>B) Scheduler</li>
+        <li>C) kubelet</li>
         <li>D) etcd</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: C</strong><br/>
+          <strong>Answer: B</strong><br/>
           The kube-scheduler watches for unscheduled Pods and selects the best node for them based on resource availability, affinity rules, and other constraints.
         </div>
       </details>
@@ -1069,13 +1069,13 @@ ports:                # this is a "sequence" (list), items start with a dash
       <ul class="mcq-options">
         <li>A) In a relational database like MySQL</li>
         <li>B) In flat files on the master node</li>
-        <li>C) In etcd (distributed key-value store)</li>
-        <li>D) In the kubelet's local cache on each node</li>
+        <li>C) In the kubelet's local cache on each node</li>
+        <li>D) In etcd (distributed key-value store)</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: C</strong><br/>
+          <strong>Answer: D</strong><br/>
           etcd is the source of truth. It stores the desired state (what you declared) and the current state. Controllers continuously compare these two and reconcile differences.
         </div>
       </details>
@@ -1084,15 +1084,15 @@ ports:                # this is a "sequence" (list), items start with a dash
     <div class="mcq-item">
       <div class="mcq-question">Q3. The kubelet runs on:</div>
       <ul class="mcq-options">
-        <li>A) Only the Control Plane (master node)</li>
-        <li>B) Every Worker Node</li>
+        <li>A) Every Worker Node</li>
+        <li>B) Only the Control Plane (master node)</li>
         <li>C) The developer's local machine</li>
         <li>D) Inside each Pod</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: A</strong><br/>
           The kubelet is a node-level agent. Every worker node has a kubelet that receives instructions from the API server and manages the lifecycle of Pods and containers on that specific node.
         </div>
       </details>
@@ -1102,14 +1102,14 @@ ports:                # this is a "sequence" (list), items start with a dash
       <div class="mcq-question">Q4. When you run <code>kubectl apply -f deployment.yaml</code>, which component is contacted first?</div>
       <ul class="mcq-options">
         <li>A) etcd</li>
-        <li>B) kubelet</li>
-        <li>C) The API Server</li>
+        <li>B) The API Server</li>
+        <li>C) kubelet</li>
         <li>D) The Scheduler</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: C</strong><br/>
+          <strong>Answer: B</strong><br/>
           Every interaction with the cluster goes through the API Server — it is the single front door. It authenticates the request, validates the YAML, and then persists the desired state to etcd. The scheduler and controllers react asynchronously afterwards.
         </div>
       </details>
@@ -1119,14 +1119,14 @@ ports:                # this is a "sequence" (list), items start with a dash
       <div class="mcq-question">Q5. What happens if the etcd database becomes unavailable?</div>
       <ul class="mcq-options">
         <li>A) All running Pods immediately stop</li>
-        <li>B) Existing workloads keep running but no new state changes (create, update, delete) can be processed</li>
-        <li>C) The scheduler takes over etcd's duties temporarily</li>
+        <li>B) The scheduler takes over etcd's duties temporarily</li>
+        <li>C) Existing workloads keep running but no new state changes (create, update, delete) can be processed</li>
         <li>D) The kubelet on each node crashes</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: C</strong><br/>
           etcd outage means the API server cannot read or write cluster state. Already-running Pods continue as-is (kubelet still manages them locally), but you cannot create new Pods, scale, deploy, or make any changes until etcd recovers. This is why etcd is run as a clustered HA setup in production.
         </div>
       </details>
@@ -1135,15 +1135,15 @@ ports:                # this is a "sequence" (list), items start with a dash
     <div class="mcq-item">
       <div class="mcq-question">Q6. Which control plane component continuously compares "desired state" with "actual state" and reconciles the difference?</div>
       <ul class="mcq-options">
-        <li>A) API Server</li>
-        <li>B) etcd</li>
-        <li>C) Scheduler</li>
-        <li>D) Controller Manager</li>
+        <li>A) Controller Manager</li>
+        <li>B) API Server</li>
+        <li>C) etcd</li>
+        <li>D) Scheduler</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: D</strong><br/>
+          <strong>Answer: A</strong><br/>
           The Controller Manager runs control loops (controllers) for each resource type — ReplicaSet controller, Deployment controller, Node controller, etc. Each controller watches the current state in etcd and takes action to match the desired state. This reconciliation loop is the core of Kubernetes' self-healing.
         </div>
       </details>
@@ -1284,15 +1284,15 @@ kubectl delete pod my-first-pod</code></pre>
     <div class="mcq-item">
       <div class="mcq-question">Q1. Two containers inside the same Pod communicate with each other using:</div>
       <ul class="mcq-options">
-        <li>A) localhost (they share the same network namespace)</li>
-        <li>B) The Pod's external IP address</li>
+        <li>A) The Pod's external IP address</li>
+        <li>B) localhost (they share the same network namespace)</li>
         <li>C) A Kubernetes Service</li>
         <li>D) etcd</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: A</strong><br/>
+          <strong>Answer: B</strong><br/>
           Containers in the same Pod share the same network namespace, including IP address and port space. They communicate via localhost, just like two processes on the same machine.
         </div>
       </details>
@@ -1302,14 +1302,14 @@ kubectl delete pod my-first-pod</code></pre>
       <div class="mcq-question">Q2. Why should you NOT run standalone Pods in production?</div>
       <ul class="mcq-options">
         <li>A) Pods cannot run more than one container</li>
-        <li>B) If a standalone Pod dies, Kubernetes won't automatically recreate it</li>
-        <li>C) Pods don't support resource limits</li>
+        <li>B) Pods don't support resource limits</li>
+        <li>C) If a standalone Pod dies, Kubernetes won't automatically recreate it</li>
         <li>D) Pods are not visible to Services</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: C</strong><br/>
           Pods are ephemeral. Without a controller (Deployment, ReplicaSet), a dead Pod is just gone. Controllers provide self-healing by ensuring a desired number of Pod replicas are always running.
         </div>
       </details>
@@ -1319,14 +1319,14 @@ kubectl delete pod my-first-pod</code></pre>
       <div class="mcq-question">Q3. What is a "sidecar" container pattern?</div>
       <ul class="mcq-options">
         <li>A) A container that replaces the main container during updates</li>
-        <li>B) An extra container in the same Pod that provides supporting functionality such as logging, proxying, or config reloading</li>
-        <li>C) The first container to start in a multi-container Pod</li>
-        <li>D) A container with higher CPU limits than the main container</li>
+        <li>B) The first container to start in a multi-container Pod</li>
+        <li>C) A container with higher CPU limits than the main container</li>
+        <li>D) An extra container in the same Pod that provides supporting functionality such as logging, proxying, or config reloading</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: D</strong><br/>
           The sidecar pattern places a helper container alongside the main application container in the same Pod. Common examples: a Fluentd container that collects and ships the app's logs, an Envoy proxy that handles service mesh traffic, or a git-sync container that keeps a config volume up to date.
         </div>
       </details>
@@ -1336,14 +1336,14 @@ kubectl delete pod my-first-pod</code></pre>
       <div class="mcq-question">Q4. You run <code>kubectl get pods</code> and see <code>STATUS: CrashLoopBackOff</code>. What does this mean?</div>
       <ul class="mcq-options">
         <li>A) The Pod is still being scheduled onto a node</li>
-        <li>B) The Pod is waiting for a PersistentVolumeClaim to be bound</li>
-        <li>C) The container keeps crashing after starting, and Kubernetes is restarting it with exponentially increasing delays</li>
+        <li>B) The container keeps crashing after starting, and Kubernetes is restarting it with exponentially increasing delays</li>
+        <li>C) The Pod is waiting for a PersistentVolumeClaim to be bound</li>
         <li>D) The node ran out of memory and evicted the Pod</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: C</strong><br/>
+          <strong>Answer: B</strong><br/>
           CrashLoopBackOff means the container starts, crashes (exits with non-zero), and Kubernetes restarts it. After each crash the backoff delay doubles (10s → 20s → 40s … up to 5 minutes). Debug with <code>kubectl logs &lt;pod&gt; --previous</code> to see logs from the crashed container.
         </div>
       </details>
@@ -1353,14 +1353,14 @@ kubectl delete pod my-first-pod</code></pre>
       <div class="mcq-question">Q5. Which Pod phase indicates that all containers terminated successfully (exit code 0)?</div>
       <ul class="mcq-options">
         <li>A) Running</li>
-        <li>B) Completed / Succeeded</li>
-        <li>C) Terminating</li>
+        <li>B) Terminating</li>
+        <li>C) Completed / Succeeded</li>
         <li>D) Ready</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: C</strong><br/>
           The <em>Succeeded</em> phase means every container in the Pod ran to completion and exited with code 0. This is the expected final state for Job-created Pods. Long-running service Pods (web servers, APIs) should always stay in <em>Running</em> state.
         </div>
       </details>
@@ -1370,14 +1370,14 @@ kubectl delete pod my-first-pod</code></pre>
       <div class="mcq-question">Q6. What does <code>kubectl describe pod my-pod</code> show that <code>kubectl get pod my-pod</code> does not?</div>
       <ul class="mcq-options">
         <li>A) The Pod's IP address</li>
-        <li>B) The full event log, resource usage, volume mounts, environment variables, and container state details</li>
-        <li>C) Only the Pod's labels</li>
-        <li>D) The YAML manifest used to create the Pod</li>
+        <li>B) Only the Pod's labels</li>
+        <li>C) The YAML manifest used to create the Pod</li>
+        <li>D) The full event log, resource usage, volume mounts, environment variables, and container state details</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: D</strong><br/>
           <code>kubectl describe</code> is the go-to debugging command. It shows the full spec, current status, container states, resource requests/limits, mounted volumes, env vars, and — most importantly — the <em>Events</em> section at the bottom, which explains exactly why a Pod might be stuck or failing.
         </div>
       </details>
@@ -1466,15 +1466,15 @@ spec:
     <div class="mcq-item">
       <div class="mcq-question">Q1. If you set <code>replicas: 5</code> in a ReplicaSet and manually delete 2 Pods, what happens?</div>
       <ul class="mcq-options">
-        <li>A) The cluster shuts down</li>
-        <li>B) The remaining 3 Pods continue but no new ones are created</li>
-        <li>C) The ReplicaSet creates 2 new Pods to maintain the desired count of 5</li>
+        <li>A) The ReplicaSet creates 2 new Pods to maintain the desired count of 5</li>
+        <li>B) The cluster shuts down</li>
+        <li>C) The remaining 3 Pods continue but no new ones are created</li>
         <li>D) The ReplicaSet is deleted</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: C</strong><br/>
+          <strong>Answer: A</strong><br/>
           The ReplicaSet controller constantly watches the cluster. When it detects fewer Pods than desired, it creates new ones. This is the core self-healing mechanism of Kubernetes.
         </div>
       </details>
@@ -1484,14 +1484,14 @@ spec:
       <div class="mcq-question">Q2. How does a ReplicaSet identify which Pods it manages?</div>
       <ul class="mcq-options">
         <li>A) By the Pod's IP address</li>
-        <li>B) By matching labels defined in the <code>selector.matchLabels</code> field</li>
-        <li>C) By the Pod's creation timestamp</li>
+        <li>B) By the Pod's creation timestamp</li>
+        <li>C) By matching labels defined in the <code>selector.matchLabels</code> field</li>
         <li>D) By the Pod's node name</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: C</strong><br/>
           Labels are key-value pairs attached to Kubernetes objects. The <code>selector</code> in a ReplicaSet defines which labels to look for when counting and managing Pods.
         </div>
       </details>
@@ -1501,14 +1501,14 @@ spec:
       <div class="mcq-question">Q3. You have a ReplicaSet with <code>replicas: 3</code>. You manually create a 4th Pod with the same labels. What happens?</div>
       <ul class="mcq-options">
         <li>A) Nothing — all 4 Pods keep running alongside each other</li>
-        <li>B) The ReplicaSet immediately terminates one Pod (could be any of the four) to bring the total back to 3</li>
-        <li>C) The manually created Pod is rejected by the API Server</li>
-        <li>D) The ReplicaSet scales itself to 4</li>
+        <li>B) The manually created Pod is rejected by the API Server</li>
+        <li>C) The ReplicaSet scales itself to 4</li>
+        <li>D) The ReplicaSet immediately terminates one Pod (could be any of the four) to bring the total back to 3</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: D</strong><br/>
           The ReplicaSet controller only cares about the total count of Pods matching its selector. If it detects 4 when it wants 3, it deletes one — regardless of which Pod created it. This is why you should never create Pods with labels that accidentally match an existing ReplicaSet's selector.
         </div>
       </details>
@@ -1517,15 +1517,15 @@ spec:
     <div class="mcq-item">
       <div class="mcq-question">Q4. When you delete a ReplicaSet, what happens to the Pods it was managing?</div>
       <ul class="mcq-options">
-        <li>A) Pods continue running independently and are never deleted</li>
-        <li>B) Pods are deleted along with the ReplicaSet (by default)</li>
+        <li>A) Pods are deleted along with the ReplicaSet (by default)</li>
+        <li>B) Pods continue running independently and are never deleted</li>
         <li>C) Pods are adopted by another ReplicaSet with a matching selector</li>
         <li>D) Pods are moved to the kube-system namespace for safekeeping</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: A</strong><br/>
           By default, deleting a ReplicaSet cascades — all Pods it owns are garbage-collected. You can use <code>--cascade=orphan</code> to leave the Pods running without an owner, but this is rarely desirable in practice.
         </div>
       </details>
@@ -1552,14 +1552,14 @@ spec:
       <div class="mcq-question">Q6. What is the primary reason to use a Deployment instead of managing a ReplicaSet directly?</div>
       <ul class="mcq-options">
         <li>A) A Deployment allows more replicas than a ReplicaSet</li>
-        <li>B) A Deployment adds rolling updates, rollback history, and pause/resume capabilities on top of ReplicaSet functionality</li>
-        <li>C) ReplicaSets cannot manage Pods with resource limits</li>
-        <li>D) Deployments are faster to schedule than ReplicaSets</li>
+        <li>B) ReplicaSets cannot manage Pods with resource limits</li>
+        <li>C) Deployments are faster to schedule than ReplicaSets</li>
+        <li>D) A Deployment adds rolling updates, rollback history, and pause/resume capabilities on top of ReplicaSet functionality</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: D</strong><br/>
           A Deployment wraps a ReplicaSet and adds critical production features: declarative rolling updates (swap old RS for new RS), rollback history via revision tracking, and the ability to pause a rollout mid-way for canary-style testing. ReplicaSet alone has none of these.
         </div>
       </details>
@@ -1732,15 +1732,15 @@ kubectl rollout history deployment/my-app</code></pre>
     <div class="mcq-item">
       <div class="mcq-question">Q1. What is the main advantage of Deployments over manually managing ReplicaSets?</div>
       <ul class="mcq-options">
-        <li>A) Deployments can run more containers per Pod</li>
-        <li>B) Deployments support rolling updates, rollbacks, and maintain update history</li>
+        <li>A) Deployments support rolling updates, rollbacks, and maintain update history</li>
+        <li>B) Deployments can run more containers per Pod</li>
         <li>C) Deployments don't need labels</li>
         <li>D) Deployments run on the control plane, not worker nodes</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: A</strong><br/>
           A Deployment wraps a ReplicaSet and adds declarative update management. You can push a new image version, watch it roll out progressively, and roll back instantly if something goes wrong.
         </div>
       </details>
@@ -1767,14 +1767,14 @@ kubectl rollout history deployment/my-app</code></pre>
       <div class="mcq-question">Q3. Your newly deployed version is crashing in production. What is the fastest recovery command?</div>
       <ul class="mcq-options">
         <li>A) <code>kubectl delete deployment my-app</code> and recreate it</li>
-        <li>B) <code>kubectl rollout undo deployment/my-app</code></li>
-        <li>C) Manually edit every Pod's image</li>
+        <li>B) Manually edit every Pod's image</li>
+        <li>C) <code>kubectl rollout undo deployment/my-app</code></li>
         <li>D) Scale replicas to 0 and back to 3</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: C</strong><br/>
           <code>kubectl rollout undo</code> instantly reverts the Deployment to the previous ReplicaSet revision. It triggers another rolling update in reverse — new version Pods are replaced by old version Pods with zero downtime. Add <code>--to-revision=N</code> to jump to a specific older version.
         </div>
       </details>
@@ -1783,15 +1783,15 @@ kubectl rollout history deployment/my-app</code></pre>
     <div class="mcq-item">
       <div class="mcq-question">Q4. Which deployment strategy kills ALL old Pods before starting new ones (accepts brief downtime)?</div>
       <ul class="mcq-options">
-        <li>A) RollingUpdate</li>
-        <li>B) BlueGreen</li>
-        <li>C) Recreate</li>
+        <li>A) Recreate</li>
+        <li>B) RollingUpdate</li>
+        <li>C) BlueGreen</li>
         <li>D) Canary</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: C</strong><br/>
+          <strong>Answer: A</strong><br/>
           The <code>Recreate</code> strategy terminates all Pods of the old version first, then starts Pods of the new version. This causes downtime equal to the startup time of your new Pods but avoids running two versions simultaneously — useful when the new version is incompatible with the old database schema.
         </div>
       </details>
@@ -1818,14 +1818,14 @@ kubectl rollout history deployment/my-app</code></pre>
       <div class="mcq-question">Q6. What does <code>kubectl rollout pause deployment/my-app</code> do?</div>
       <ul class="mcq-options">
         <li>A) Stops all running Pods immediately</li>
-        <li>B) Freezes the rollout mid-way — new Pods already created continue running but no further Pods are replaced until resumed</li>
-        <li>C) Reverts to the previous version</li>
+        <li>B) Reverts to the previous version</li>
+        <li>C) Freezes the rollout mid-way — new Pods already created continue running but no further Pods are replaced until resumed</li>
         <li>D) Scales the Deployment to 0 replicas</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: C</strong><br/>
           Pausing a rollout lets you do a manual canary check — you push a new version to a fraction of your Pods, verify it works (check logs, metrics, error rates), and then <code>kubectl rollout resume deployment/my-app</code> to continue replacing the rest.
         </div>
       </details>
@@ -1941,15 +1941,15 @@ spec:
     <div class="mcq-item">
       <div class="mcq-question">Q1. You have a database Pod inside the cluster. Which Service type should you use so only other Pods can access it?</div>
       <ul class="mcq-options">
-        <li>A) ClusterIP</li>
-        <li>B) NodePort</li>
-        <li>C) LoadBalancer</li>
-        <li>D) ExternalName</li>
+        <li>A) NodePort</li>
+        <li>B) LoadBalancer</li>
+        <li>C) ExternalName</li>
+        <li>D) ClusterIP</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: A</strong><br/>
+          <strong>Answer: D</strong><br/>
           ClusterIP is only accessible within the cluster. It's perfect for internal services like databases that should never be exposed to the internet.
         </div>
       </details>
@@ -1959,14 +1959,14 @@ spec:
       <div class="mcq-question">Q2. A Service's <code>targetPort</code> refers to:</div>
       <ul class="mcq-options">
         <li>A) The port clients use to access the Service</li>
-        <li>B) The port exposed on the Kubernetes node</li>
-        <li>C) The port the container inside the Pod is listening on</li>
+        <li>B) The port the container inside the Pod is listening on</li>
+        <li>C) The port exposed on the Kubernetes node</li>
         <li>D) The port used by etcd</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: C</strong><br/>
+          <strong>Answer: B</strong><br/>
           <code>port</code> is what clients call (e.g., 80). <code>targetPort</code> is where the container is actually listening (e.g., 3000). The Service translates between them.
         </div>
       </details>
@@ -1976,14 +1976,14 @@ spec:
       <div class="mcq-question">Q3. How does a Service know which Pods to route traffic to as Pods are created and destroyed?</div>
       <ul class="mcq-options">
         <li>A) It uses a hardcoded list of Pod IP addresses updated manually</li>
-        <li>B) It continuously matches its <code>selector</code> labels against running Pod labels — the Endpoints list updates automatically</li>
-        <li>C) It routes to all Pods on the same node</li>
+        <li>B) It routes to all Pods on the same node</li>
+        <li>C) It continuously matches its <code>selector</code> labels against running Pod labels — the Endpoints list updates automatically</li>
         <li>D) It reads the Deployment's replica count to decide routing</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: C</strong><br/>
           Kubernetes maintains an <em>Endpoints</em> object for each Service. The Endpoints controller continuously watches for Pods with matching labels and updates the IP list. When a Pod becomes Ready it's added; when it fails a readiness probe it's removed. This is why Services provide stable access despite Pods being replaced.
         </div>
       </details>
@@ -1993,14 +1993,14 @@ spec:
       <div class="mcq-question">Q4. What is a "headless" Service (<code>clusterIP: None</code>) used for?</div>
       <ul class="mcq-options">
         <li>A) A Service with no ports configured</li>
-        <li>B) A Service that returns individual Pod IPs directly via DNS instead of load-balancing through a virtual IP — used by StatefulSets for stable Pod hostnames</li>
-        <li>C) A Service that works only inside the kube-system namespace</li>
-        <li>D) A Service that disables all network traffic to the Pods</li>
+        <li>B) A Service that works only inside the kube-system namespace</li>
+        <li>C) A Service that disables all network traffic to the Pods</li>
+        <li>D) A Service that returns individual Pod IPs directly via DNS instead of load-balancing through a virtual IP — used by StatefulSets for stable Pod hostnames</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: D</strong><br/>
           With <code>clusterIP: None</code>, no virtual IP is assigned. DNS queries for the Service return the individual Pod IPs directly (A records). StatefulSets use headless Services so each Pod gets a stable DNS name like <code>pod-0.my-svc.default.svc.cluster.local</code>.
         </div>
       </details>
@@ -2009,15 +2009,15 @@ spec:
     <div class="mcq-item">
       <div class="mcq-question">Q5. What port range does a NodePort Service use?</div>
       <ul class="mcq-options">
-        <li>A) 80 and 443 only</li>
-        <li>B) 1024–49151</li>
-        <li>C) 30000–32767</li>
+        <li>A) 30000–32767</li>
+        <li>B) 80 and 443 only</li>
+        <li>C) 1024–49151</li>
         <li>D) Any port above 1024</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: C</strong><br/>
+          <strong>Answer: A</strong><br/>
           NodePort Services use ports in the 30000–32767 range by default. Each node in the cluster opens that port and forwards traffic to the corresponding Service. You can specify a particular port in this range, or let Kubernetes assign one automatically.
         </div>
       </details>
@@ -2138,14 +2138,14 @@ kubectl config set-context --current --namespace=dev</code></pre>
       <div class="mcq-question">Q1. Which namespace contains core Kubernetes components like the API server and scheduler?</div>
       <ul class="mcq-options">
         <li>A) default</li>
-        <li>B) kube-system</li>
-        <li>C) kube-public</li>
-        <li>D) system-core</li>
+        <li>B) kube-public</li>
+        <li>C) system-core</li>
+        <li>D) kube-system</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: D</strong><br/>
           The <code>kube-system</code> namespace holds all Kubernetes system Pods (like CoreDNS, kube-proxy, the scheduler, etc.). You can view them with <code>kubectl get pods -n kube-system</code>.
         </div>
       </details>
@@ -2172,14 +2172,14 @@ kubectl config set-context --current --namespace=dev</code></pre>
       <div class="mcq-question">Q3. When you run <code>kubectl get pods</code> without any flags, which namespace does it look in?</div>
       <ul class="mcq-options">
         <li>A) kube-system</li>
-        <li>B) kube-public</li>
-        <li>C) The <code>default</code> namespace (or whichever namespace your current kubeconfig context is set to)</li>
+        <li>B) The <code>default</code> namespace (or whichever namespace your current kubeconfig context is set to)</li>
+        <li>C) kube-public</li>
         <li>D) All namespaces simultaneously</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: C</strong><br/>
+          <strong>Answer: B</strong><br/>
           kubectl commands operate in the namespace configured in the current kubeconfig context. Out of the box, that's the <code>default</code> namespace. Change it with <code>kubectl config set-context --current --namespace=&lt;ns&gt;</code>, or pass <code>-n &lt;ns&gt;</code> on each command.
         </div>
       </details>
@@ -2189,14 +2189,14 @@ kubectl config set-context --current --namespace=dev</code></pre>
       <div class="mcq-question">Q4. Can a Pod in the <code>frontend</code> namespace call a Service in the <code>backend</code> namespace?</div>
       <ul class="mcq-options">
         <li>A) No — namespaces are fully network-isolated by default</li>
-        <li>B) Yes — using the full DNS name <code>service-name.backend.svc.cluster.local</code></li>
-        <li>C) Only if the namespaces share the same labels</li>
-        <li>D) Only if a NetworkPolicy explicitly allows it and they are in the same node</li>
+        <li>B) Only if the namespaces share the same labels</li>
+        <li>C) Only if a NetworkPolicy explicitly allows it and they are in the same node</li>
+        <li>D) Yes — using the full DNS name <code>service-name.backend.svc.cluster.local</code></li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: D</strong><br/>
           Namespaces scope Kubernetes objects but do NOT provide network isolation by default — all Pods can reach all other Pods and Services across namespaces. Network isolation requires explicit <em>NetworkPolicy</em> objects. Cross-namespace DNS uses the full FQDN.
         </div>
       </details>
@@ -2205,15 +2205,15 @@ kubectl config set-context --current --namespace=dev</code></pre>
     <div class="mcq-item">
       <div class="mcq-question">Q5. Which built-in namespace contains information readable by all users, including unauthenticated ones?</div>
       <ul class="mcq-options">
-        <li>A) default</li>
-        <li>B) kube-system</li>
-        <li>C) kube-node-lease</li>
-        <li>D) kube-public</li>
+        <li>A) kube-public</li>
+        <li>B) default</li>
+        <li>C) kube-system</li>
+        <li>D) kube-node-lease</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: D</strong><br/>
+          <strong>Answer: A</strong><br/>
           <code>kube-public</code> is readable by all users (even unauthenticated). It's used by the cluster bootstrap process to expose cluster info via the <code>cluster-info</code> ConfigMap. In practice it's rarely used directly by application workloads.
         </div>
       </details>
@@ -2348,14 +2348,14 @@ data:                   # Values MUST be base64-encoded.
       <div class="mcq-question">Q1. What is the difference between a ConfigMap and a Secret?</div>
       <ul class="mcq-options">
         <li>A) ConfigMaps can only store strings; Secrets can store binary data</li>
-        <li>B) ConfigMaps store non-sensitive config; Secrets store sensitive data (with base64 encoding and additional access controls)</li>
-        <li>C) Secrets are encrypted with AES-256 by default in etcd</li>
+        <li>B) Secrets are encrypted with AES-256 by default in etcd</li>
+        <li>C) ConfigMaps store non-sensitive config; Secrets store sensitive data (with base64 encoding and additional access controls)</li>
         <li>D) ConfigMaps are available in all namespaces; Secrets are cluster-scoped</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: C</strong><br/>
           The key distinction is intent and access control. Secrets are base64-encoded (not encrypted by default) and Kubernetes provides mechanisms to restrict who can read them via RBAC. ConfigMaps are plain-text and typically readable by anyone in the namespace.
         </div>
       </details>
@@ -2364,15 +2364,15 @@ data:                   # Values MUST be base64-encoded.
     <div class="mcq-item">
       <div class="mcq-question">Q2. If you update a ConfigMap that is mounted as a volume, what happens?</div>
       <ul class="mcq-options">
-        <li>A) Nothing — Pods must be restarted to pick up changes</li>
-        <li>B) The mounted file is updated automatically (with a small delay), but the app must re-read the file</li>
+        <li>A) The mounted file is updated automatically (with a small delay), but the app must re-read the file</li>
+        <li>B) Nothing — Pods must be restarted to pick up changes</li>
         <li>C) The Pod is automatically restarted</li>
         <li>D) The ConfigMap is immutable after creation</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: A</strong><br/>
           Volume-mounted ConfigMaps are updated automatically by the kubelet (typically within 1-2 minutes). However, environment variable injections from ConfigMaps are NOT updated — the Pod must be restarted for those to take effect.
         </div>
       </details>
@@ -2382,14 +2382,14 @@ data:                   # Values MUST be base64-encoded.
       <div class="mcq-question">Q3. What happens if a Pod references a ConfigMap that does not exist in the cluster?</div>
       <ul class="mcq-options">
         <li>A) The Pod starts with empty environment variables as a fallback</li>
-        <li>B) Kubernetes creates an empty ConfigMap automatically</li>
-        <li>C) The Pod is created but stays in a Pending/Error state and the container does not start</li>
+        <li>B) The Pod is created but stays in a Pending/Error state and the container does not start</li>
+        <li>C) Kubernetes creates an empty ConfigMap automatically</li>
         <li>D) The namespace is automatically deleted</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: C</strong><br/>
+          <strong>Answer: B</strong><br/>
           If a referenced ConfigMap (or Secret) is missing, the Pod gets stuck before the container even starts — the event log shows something like <em>"configmap not found"</em>. You can set <code>optional: true</code> on the reference to allow the Pod to start even if the ConfigMap doesn't exist yet.
         </div>
       </details>
@@ -2399,14 +2399,14 @@ data:                   # Values MUST be base64-encoded.
       <div class="mcq-question">Q4. How do you base64-encode the value <code>password123</code> on the command line to put it in a Secret?</div>
       <ul class="mcq-options">
         <li>A) <code>kubectl encode "password123"</code></li>
-        <li>B) <code>echo -n "password123" | base64</code></li>
-        <li>C) <code>openssl secret "password123"</code></li>
+        <li>B) <code>openssl secret "password123"</code></li>
+        <li>C) <code>echo -n "password123" | base64</code></li>
         <li>D) <code>kubectl create secret --encode "password123"</code></li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: C</strong><br/>
           <code>echo -n "password123" | base64</code> outputs <code>cGFzc3dvcmQxMjM=</code>. The <code>-n</code> flag is important — it prevents <code>echo</code> from adding a newline character, which would otherwise be included in the encoded value and cause the decoded secret to have a trailing newline.
         </div>
       </details>
@@ -2417,13 +2417,13 @@ data:                   # Values MUST be base64-encoded.
       <ul class="mcq-options">
         <li>A) <code>Opaque</code></li>
         <li>B) <code>kubernetes.io/tls</code></li>
-        <li>C) <code>kubernetes.io/dockerconfigjson</code></li>
-        <li>D) <code>kubernetes.io/basic-auth</code></li>
+        <li>C) <code>kubernetes.io/basic-auth</code></li>
+        <li>D) <code>kubernetes.io/dockerconfigjson</code></li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: C</strong><br/>
+          <strong>Answer: D</strong><br/>
           Kubernetes recognises specialised Secret types for structured data. <code>kubernetes.io/dockerconfigjson</code> holds credentials for pulling images from a private registry. You reference it in a Pod with <code>imagePullSecrets</code>. <code>kubernetes.io/tls</code> holds a TLS certificate + key pair (used by Ingress).
         </div>
       </details>
@@ -2564,14 +2564,14 @@ spec:
       <div class="mcq-question">Q1. What happens to data stored in a container's filesystem when the Pod is deleted?</div>
       <ul class="mcq-options">
         <li>A) Data is persisted in etcd automatically</li>
-        <li>B) Data is lost — container storage is ephemeral</li>
-        <li>C) Data is moved to another Pod</li>
+        <li>B) Data is moved to another Pod</li>
+        <li>C) Data is lost — container storage is ephemeral</li>
         <li>D) Data is stored in the ConfigMap</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: C</strong><br/>
           Container filesystems are tied to the container's lifecycle. When the Pod is deleted, all data written inside the container is gone. You must use Volumes (PVC) to persist data beyond a Pod's lifecycle.
         </div>
       </details>
@@ -2581,14 +2581,14 @@ spec:
       <div class="mcq-question">Q2. A PersistentVolumeClaim (PVC) is best described as:</div>
       <ul class="mcq-options">
         <li>A) The physical disk itself</li>
-        <li>B) A request by a Pod/user for a specific amount and type of storage</li>
-        <li>C) A StorageClass configuration file</li>
-        <li>D) A volume mounted at /tmp inside a container</li>
+        <li>B) A StorageClass configuration file</li>
+        <li>C) A volume mounted at /tmp inside a container</li>
+        <li>D) A request by a Pod/user for a specific amount and type of storage</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: D</strong><br/>
           PVC is an abstraction — the app just says "I need 5Gi of ReadWriteOnce storage." Kubernetes then binds the PVC to an available PersistentVolume (or creates one dynamically via StorageClass).
         </div>
       </details>
@@ -2597,15 +2597,15 @@ spec:
     <div class="mcq-item">
       <div class="mcq-question">Q3. Which access mode allows multiple Pods on <em>different nodes</em> to read and write the same volume simultaneously?</div>
       <ul class="mcq-options">
-        <li>A) ReadWriteOnce (RWO)</li>
-        <li>B) ReadOnlyMany (ROX)</li>
-        <li>C) ReadWriteMany (RWX)</li>
+        <li>A) ReadWriteMany (RWX)</li>
+        <li>B) ReadWriteOnce (RWO)</li>
+        <li>C) ReadOnlyMany (ROX)</li>
         <li>D) ReadWriteAll (RWA)</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: C</strong><br/>
+          <strong>Answer: A</strong><br/>
           ReadWriteMany (RWX) allows concurrent read-write access from multiple nodes simultaneously. This requires a distributed filesystem like NFS, CephFS, or Azure Files. Most cloud block storage (AWS EBS, GCP PD) only supports RWO — one node at a time.
         </div>
       </details>
@@ -2615,14 +2615,14 @@ spec:
       <div class="mcq-question">Q4. What does a StorageClass enable in Kubernetes?</div>
       <ul class="mcq-options">
         <li>A) It classifies Pods by their storage usage</li>
-        <li>B) It defines the type and properties of the storage backend, enabling automatic (dynamic) PersistentVolume provisioning when a PVC is created</li>
-        <li>C) It sets memory limits on containers that use volumes</li>
+        <li>B) It sets memory limits on containers that use volumes</li>
+        <li>C) It defines the type and properties of the storage backend, enabling automatic (dynamic) PersistentVolume provisioning when a PVC is created</li>
         <li>D) It manages ConfigMap data stored on disk</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: C</strong><br/>
           Without a StorageClass, an admin must manually create PersistentVolumes. With dynamic provisioning, when a PVC is created the StorageClass's provisioner (e.g., the AWS EBS CSI driver) automatically creates and binds a matching PV. Cloud clusters come with default StorageClasses pre-configured.
         </div>
       </details>
@@ -2632,14 +2632,14 @@ spec:
       <div class="mcq-question">Q5. A PVC shows <code>STATUS: Bound</code>. What does this mean?</div>
       <ul class="mcq-options">
         <li>A) The PVC is full and cannot accept more data</li>
-        <li>B) The PVC has been successfully matched to a PersistentVolume and is ready for a Pod to use</li>
-        <li>C) The PVC is locked to a specific node</li>
-        <li>D) The Pod using the PVC has been deleted</li>
+        <li>B) The PVC is locked to a specific node</li>
+        <li>C) The Pod using the PVC has been deleted</li>
+        <li>D) The PVC has been successfully matched to a PersistentVolume and is ready for a Pod to use</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: D</strong><br/>
           A PVC transitions from <em>Pending</em> (waiting for a matching PV) to <em>Bound</em> (matched and ready). Once Bound, the PVC can be mounted by a Pod. If no matching PV exists and no StorageClass provides dynamic provisioning, the PVC stays Pending indefinitely.
         </div>
       </details>
@@ -2648,15 +2648,15 @@ spec:
     <div class="mcq-item">
       <div class="mcq-question">Q6. You delete the Pod that was using a PVC. What happens to the PVC and its data?</div>
       <ul class="mcq-options">
-        <li>A) The PVC is automatically deleted along with the Pod</li>
-        <li>B) The PVC remains and retains its data — a new Pod can mount the same PVC</li>
+        <li>A) The PVC remains and retains its data — a new Pod can mount the same PVC</li>
+        <li>B) The PVC is automatically deleted along with the Pod</li>
         <li>C) The data on the PVC is automatically wiped for security</li>
         <li>D) The PVC enters a Terminating state and cannot be reused</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: A</strong><br/>
           PVCs are independent objects from Pods. Deleting a Pod does not delete its PVCs. The PVC stays Bound to its PV and retains all data, ready to be mounted by a replacement Pod. This is precisely why PVCs exist — to persist data across Pod restarts and replacements.
         </div>
       </details>
@@ -2786,14 +2786,14 @@ spec:
       <div class="mcq-question">Q2. For an Ingress resource to work, what must be installed in the cluster?</div>
       <ul class="mcq-options">
         <li>A) A dedicated Ingress Pod in every namespace</li>
-        <li>B) An Ingress Controller (e.g., nginx-ingress, Traefik)</li>
-        <li>C) An additional cloud load balancer per Ingress rule</li>
-        <li>D) A PersistentVolume for Ingress caching</li>
+        <li>B) An additional cloud load balancer per Ingress rule</li>
+        <li>C) A PersistentVolume for Ingress caching</li>
+        <li>D) An Ingress Controller (e.g., nginx-ingress, Traefik)</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: D</strong><br/>
           The <code>Ingress</code> object is just a configuration declaration. You also need an <em>Ingress Controller</em> — a running Pod (like nginx or Traefik) that reads Ingress rules and actually routes the traffic.
         </div>
       </details>
@@ -2802,15 +2802,15 @@ spec:
     <div class="mcq-item">
       <div class="mcq-question">Q3. An Ingress rule with <code>pathType: Exact</code> and <code>path: /api</code> will match which requests?</div>
       <ul class="mcq-options">
-        <li>A) /api, /api/users, /api/v2/products</li>
-        <li>B) Only exactly <code>/api</code> — not <code>/api/</code> or <code>/api/users</code></li>
+        <li>A) Only exactly <code>/api</code> — not <code>/api/</code> or <code>/api/users</code></li>
+        <li>B) /api, /api/users, /api/v2/products</li>
         <li>C) Any URL containing the string "api"</li>
         <li>D) /api and all its sub-paths</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: A</strong><br/>
           <code>pathType: Exact</code> matches only the exact path string. <code>pathType: Prefix</code> would match <code>/api</code> and all paths that start with <code>/api</code> (like <code>/api/users</code>). Use Exact for strict routing and Prefix for REST API hierarchies.
         </div>
       </details>
@@ -2837,14 +2837,14 @@ spec:
       <div class="mcq-question">Q5. You have two Ingress Controllers installed (nginx and Traefik). How do you tell a specific Ingress object to use the nginx controller?</div>
       <ul class="mcq-options">
         <li>A) Set <code>spec.controller: nginx</code> in the Ingress YAML</li>
-        <li>B) Set <code>spec.ingressClassName: nginx</code> in the Ingress YAML</li>
-        <li>C) Add a label <code>ingress-controller: nginx</code> to the Ingress object</li>
+        <li>B) Add a label <code>ingress-controller: nginx</code> to the Ingress object</li>
+        <li>C) Set <code>spec.ingressClassName: nginx</code> in the Ingress YAML</li>
         <li>D) Only one Ingress Controller can be active in a cluster at a time</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: C</strong><br/>
           <code>spec.ingressClassName</code> specifies which IngressClass (and therefore which controller) should handle this Ingress object. Multiple controllers can coexist in one cluster, each watching only the Ingress resources that match their class name.
         </div>
       </details>
@@ -2928,15 +2928,15 @@ spec:
     <div class="mcq-item">
       <div class="mcq-question">Q1. Your app takes 60 seconds to connect to the database on startup. Which probe should you configure to prevent premature restarts?</div>
       <ul class="mcq-options">
-        <li>A) Liveness Probe with a long initialDelaySeconds</li>
-        <li>B) Startup Probe — it pauses liveness checks until startup succeeds</li>
+        <li>A) Startup Probe — it pauses liveness checks until startup succeeds</li>
+        <li>B) Liveness Probe with a long initialDelaySeconds</li>
         <li>C) Readiness Probe with failureThreshold: 100</li>
         <li>D) No probe needed, containers always wait</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: A</strong><br/>
           The Startup Probe was specifically designed for slow-starting apps. While the startup probe is running, liveness probes are disabled, preventing the app from being killed before it finishes initializing.
         </div>
       </details>
@@ -2946,14 +2946,14 @@ spec:
       <div class="mcq-question">Q2. A Pod's readiness probe fails. What does Kubernetes do?</div>
       <ul class="mcq-options">
         <li>A) Immediately restarts the container</li>
-        <li>B) Deletes the Pod</li>
-        <li>C) Removes the Pod from the Service's endpoint list (stops routing new traffic to it)</li>
+        <li>B) Removes the Pod from the Service's endpoint list (stops routing new traffic to it)</li>
+        <li>C) Deletes the Pod</li>
         <li>D) Drains the node</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: C</strong><br/>
+          <strong>Answer: B</strong><br/>
           A failing readiness probe means "I'm not ready for traffic." Kubernetes keeps the container running (unlike liveness) but removes it from the Service endpoints so no new requests are routed to it.
         </div>
       </details>
@@ -2963,14 +2963,14 @@ spec:
       <div class="mcq-question">Q3. Besides HTTP GET, what other probe mechanisms does Kubernetes support?</div>
       <ul class="mcq-options">
         <li>A) SMTP and FTP</li>
-        <li>B) TCP Socket check and exec command (run a command inside the container and check exit code)</li>
-        <li>C) DNS lookup and ICMP ping</li>
+        <li>B) DNS lookup and ICMP ping</li>
+        <li>C) TCP Socket check and exec command (run a command inside the container and check exit code)</li>
         <li>D) WebSocket and gRPC only</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: C</strong><br/>
           Kubernetes probes support three mechanisms: <strong>httpGet</strong> (HTTP status 200-399 = success), <strong>tcpSocket</strong> (TCP connection succeeds = success), and <strong>exec</strong> (command exit code 0 = success). Use <code>exec</code> for apps that don't expose an HTTP health endpoint, e.g., a Redis container you check with <code>redis-cli ping</code>.
         </div>
       </details>
@@ -2980,14 +2980,14 @@ spec:
       <div class="mcq-question">Q4. Your readiness probe checks the database connection. The database goes down briefly. What happens to your app Pods?</div>
       <ul class="mcq-options">
         <li>A) The Pods are restarted immediately</li>
-        <li>B) The Pods are removed from the Service endpoints (traffic stops going to them), but they are NOT restarted</li>
-        <li>C) Nothing — readiness probes only check the container, not external services</li>
-        <li>D) All Pods are deleted and rescheduled on other nodes</li>
+        <li>B) Nothing — readiness probes only check the container, not external services</li>
+        <li>C) All Pods are deleted and rescheduled on other nodes</li>
+        <li>D) The Pods are removed from the Service endpoints (traffic stops going to them), but they are NOT restarted</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: D</strong><br/>
           This is intentional behaviour, but also a design consideration. If the DB goes down, your app Pods fail readiness checks and stop receiving traffic — which looks like an outage even though the app containers are healthy. Many teams prefer readiness probes that only check the app itself, and handle DB unavailability within the app (with retry logic).
         </div>
       </details>
@@ -3014,14 +3014,14 @@ spec:
       <div class="mcq-question">Q6. What does <code>failureThreshold: 3</code> mean in a liveness probe?</div>
       <ul class="mcq-options">
         <li>A) The probe runs for a maximum of 3 seconds</li>
-        <li>B) The container is restarted after 3 consecutive probe failures (individual failures don't count if the next probe succeeds)</li>
-        <li>C) The maximum number of container restarts allowed</li>
+        <li>B) The maximum number of container restarts allowed</li>
+        <li>C) The container is restarted after 3 consecutive probe failures (individual failures don't count if the next probe succeeds)</li>
         <li>D) The HTTP status code threshold below which a response is considered a failure</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: C</strong><br/>
           The failure counter resets to zero after any successful probe. <code>failureThreshold: 3</code> means the container must fail 3 <em>consecutive</em> probes before action is taken. This prevents flapping — a single transient timeout won't restart your container unnecessarily.
         </div>
       </details>
@@ -3108,15 +3108,15 @@ spec:
     <div class="mcq-item">
       <div class="mcq-question">Q1. The Scheduler uses ________ to decide if a node has enough capacity for a Pod.</div>
       <ul class="mcq-options">
-        <li>A) Resource Requests</li>
-        <li>B) Resource Limits</li>
-        <li>C) Current actual CPU usage</li>
-        <li>D) The Pod's label selector</li>
+        <li>A) Resource Limits</li>
+        <li>B) Current actual CPU usage</li>
+        <li>C) The Pod's label selector</li>
+        <li>D) Resource Requests</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: A</strong><br/>
+          <strong>Answer: D</strong><br/>
           The scheduler looks at <em>requests</em> (guaranteed minimums) — not limits — when choosing a node. A node is considered "full" when the sum of all Pod requests exceeds its capacity.
         </div>
       </details>
@@ -3125,15 +3125,15 @@ spec:
     <div class="mcq-item">
       <div class="mcq-question">Q2. What happens when a container exceeds its memory limit?</div>
       <ul class="mcq-options">
-        <li>A) It is CPU-throttled</li>
-        <li>B) The node is drained</li>
-        <li>C) The container is OOMKilled (killed by the Out-Of-Memory killer)</li>
+        <li>A) The container is OOMKilled (killed by the Out-Of-Memory killer)</li>
+        <li>B) It is CPU-throttled</li>
+        <li>C) The node is drained</li>
         <li>D) A warning is logged but nothing happens</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: C</strong><br/>
+          <strong>Answer: A</strong><br/>
           Memory is not compressible — you can't slow down memory usage. When a container hits its memory limit, the Linux kernel's OOM killer terminates it. Kubernetes then restarts it based on the Pod's restart policy.
         </div>
       </details>
@@ -3143,14 +3143,14 @@ spec:
       <div class="mcq-question">Q3. What does <code>250m</code> mean in a CPU resource request?</div>
       <ul class="mcq-options">
         <li>A) 250 megabytes of CPU memory</li>
-        <li>B) 250 millicores — equivalent to 0.25 of one CPU core</li>
-        <li>C) 250 CPU cores reserved for this container</li>
+        <li>B) 250 CPU cores reserved for this container</li>
+        <li>C) 250 millicores — equivalent to 0.25 of one CPU core</li>
         <li>D) 250 milliseconds of CPU time per request</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: C</strong><br/>
           Kubernetes measures CPU in <em>millicores</em>: 1000m = 1 CPU core. So 250m = 0.25 cores, 500m = 0.5 cores, 2000m = 2 cores (equivalent to writing <code>2</code>). Millicores allow fine-grained CPU allocation — many small services can share a single core.
         </div>
       </details>
@@ -3160,14 +3160,14 @@ spec:
       <div class="mcq-question">Q4. What is a <code>LimitRange</code> object used for?</div>
       <ul class="mcq-options">
         <li>A) Setting the maximum number of replicas in a Deployment</li>
-        <li>B) A namespace-level policy that sets default requests/limits for containers and enforces min/max boundaries</li>
-        <li>C) A per-node memory cap set by the cluster admin</li>
-        <li>D) A storage quota for PersistentVolumeClaims only</li>
+        <li>B) A per-node memory cap set by the cluster admin</li>
+        <li>C) A storage quota for PersistentVolumeClaims only</li>
+        <li>D) A namespace-level policy that sets default requests/limits for containers and enforces min/max boundaries</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: D</strong><br/>
           A <code>LimitRange</code> sets default resource requests and limits for containers in a namespace that don't specify their own. It also enforces min/max boundaries — for example, preventing a container from requesting more than 4 CPU cores. This works together with <code>ResourceQuota</code> for namespace governance.
         </div>
       </details>
@@ -3176,15 +3176,15 @@ spec:
     <div class="mcq-item">
       <div class="mcq-question">Q5. A Pod has no resource requests set. What risk does this create?</div>
       <ul class="mcq-options">
-        <li>A) The Pod cannot start without resource requests</li>
-        <li>B) The Scheduler may place the Pod on an already overloaded node, causing resource contention and poor performance for all workloads on that node</li>
+        <li>A) The Scheduler may place the Pod on an already overloaded node, causing resource contention and poor performance for all workloads on that node</li>
+        <li>B) The Pod cannot start without resource requests</li>
         <li>C) The Pod automatically gets 1 CPU and 1Gi memory</li>
         <li>D) The Pod is placed in the kube-system namespace as a fallback</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: A</strong><br/>
           Without requests, the Scheduler has no signal about the Pod's resource needs and may place it on a full node. The Pod also gets the lowest Quality of Service (QoS) class: <em>BestEffort</em> — the first to be evicted when the node runs low on memory. Always set requests in production.
         </div>
       </details>
@@ -3290,13 +3290,13 @@ spec:
       <ul class="mcq-options">
         <li>A) Deployment</li>
         <li>B) ReplicaSet</li>
-        <li>C) StatefulSet</li>
-        <li>D) DaemonSet</li>
+        <li>C) DaemonSet</li>
+        <li>D) StatefulSet</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: C</strong><br/>
+          <strong>Answer: D</strong><br/>
           Kafka nodes need stable identities (broker IDs), stable storage (topic partitions), and ordered startup/shutdown. All these are StatefulSet features. A Deployment would create interchangeable Pods without stable identity.
         </div>
       </details>
@@ -3305,15 +3305,15 @@ spec:
     <div class="mcq-item">
       <div class="mcq-question">Q2. When you scale a StatefulSet from 3 to 5 replicas, which Pods are created?</div>
       <ul class="mcq-options">
-        <li>A) 2 new Pods with random names</li>
-        <li>B) Pod index 3 first, then Pod index 4 (in order)</li>
+        <li>A) Pod index 3 first, then Pod index 4 (in order)</li>
+        <li>B) 2 new Pods with random names</li>
         <li>C) All 5 Pods are recreated</li>
         <li>D) 2 new Pods on a dedicated node</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: A</strong><br/>
           StatefulSets maintain ordered deployment. New Pods are created sequentially starting from the next index (3, then 4). Each new Pod must be Running and Ready before the next one starts.
         </div>
       </details>
@@ -3340,14 +3340,14 @@ spec:
       <div class="mcq-question">Q4. What happens to the PersistentVolumeClaims when you delete a StatefulSet?</div>
       <ul class="mcq-options">
         <li>A) All PVCs are automatically deleted along with the StatefulSet to free storage</li>
-        <li>B) PVCs are NOT deleted — they persist to protect data from accidental loss, and must be deleted manually</li>
-        <li>C) PVCs are transferred to the default namespace</li>
+        <li>B) PVCs are transferred to the default namespace</li>
+        <li>C) PVCs are NOT deleted — they persist to protect data from accidental loss, and must be deleted manually</li>
         <li>D) PVCs are converted into ConfigMaps</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: C</strong><br/>
           StatefulSet PVCs are intentionally not garbage-collected when the StatefulSet is deleted. This is a safety mechanism — your database data survives even if the StatefulSet is accidentally deleted. You must manually delete PVCs when you truly want to remove the data.
         </div>
       </details>
@@ -3356,15 +3356,15 @@ spec:
     <div class="mcq-item">
       <div class="mcq-question">Q5. What is the role of the <code>serviceName</code> field in a StatefulSet spec?</div>
       <ul class="mcq-options">
-        <li>A) It creates a LoadBalancer Service for the StatefulSet</li>
-        <li>B) It references a headless Service that provides stable DNS names for each individual Pod (e.g., pod-0.svc-name.namespace.svc.cluster.local)</li>
+        <li>A) It references a headless Service that provides stable DNS names for each individual Pod (e.g., pod-0.svc-name.namespace.svc.cluster.local)</li>
+        <li>B) It creates a LoadBalancer Service for the StatefulSet</li>
         <li>C) It sets the hostname visible inside the container</li>
         <li>D) It links the StatefulSet to a specific StorageClass</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: A</strong><br/>
           The <code>serviceName</code> must point to a headless Service (<code>clusterIP: None</code>). This Service does not load balance but instead creates a DNS A record per Pod: <code>postgres-0.postgres.default.svc.cluster.local</code>. This stable, predictable hostname is essential for database clustering — nodes need to reach each other by a known address.
         </div>
       </details>
@@ -3474,14 +3474,14 @@ spec:
       <div class="mcq-question">Q2. Which of the following is the most appropriate use case for a DaemonSet?</div>
       <ul class="mcq-options">
         <li>A) Running a web API with 3 replicas for high availability</li>
-        <li>B) Running a Prometheus node-exporter on every node to collect hardware and OS metrics</li>
-        <li>C) Running a one-time database migration job</li>
+        <li>B) Running a one-time database migration job</li>
+        <li>C) Running a Prometheus node-exporter on every node to collect hardware and OS metrics</li>
         <li>D) Deploying a stateful PostgreSQL cluster</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: C</strong><br/>
           The node-exporter is the classic DaemonSet use case — it must run on every node to scrape that node's metrics. Other common examples: Fluentd/Filebeat for log collection, Cilium/Calico network agents, and security scanners. Web APIs belong in Deployments; databases in StatefulSets; one-time tasks in Jobs.
         </div>
       </details>
@@ -3491,14 +3491,14 @@ spec:
       <div class="mcq-question">Q3. Can you configure a DaemonSet to run on only a specific subset of nodes?</div>
       <ul class="mcq-options">
         <li>A) No — DaemonSets always run on every single node in the cluster without exception</li>
-        <li>B) Yes — using <code>nodeSelector</code>, node affinity rules, or taints and tolerations to target specific nodes</li>
-        <li>C) Only if the nodes are in the same cloud availability zone</li>
-        <li>D) Only if you also create a matching NodePort Service</li>
+        <li>B) Only if the nodes are in the same cloud availability zone</li>
+        <li>C) Only if you also create a matching NodePort Service</li>
+        <li>D) Yes — using <code>nodeSelector</code>, node affinity rules, or taints and tolerations to target specific nodes</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: D</strong><br/>
           You can use <code>spec.template.spec.nodeSelector</code> to target nodes with specific labels (e.g., only GPU nodes). Taints and tolerations also work — for example, DaemonSet Pods often have tolerations for <code>node.kubernetes.io/not-ready</code> so they get scheduled even on problematic nodes (critical for network plugins).
         </div>
       </details>
@@ -3605,14 +3605,14 @@ spec:
       <div class="mcq-question">Q2. What cron schedule runs a task every 30 minutes?</div>
       <ul class="mcq-options">
         <li>A) <code>"30 * * * *"</code></li>
-        <li>B) <code>"*/30 * * * *"</code></li>
-        <li>C) <code>"0 30 * * *"</code></li>
+        <li>B) <code>"0 30 * * *"</code></li>
+        <li>C) <code>"*/30 * * * *"</code></li>
         <li>D) <code>"* */30 * * *"</code></li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: C</strong><br/>
           <code>"*/30 * * * *"</code> means "every 30 minutes." The <code>*/n</code> syntax means "every n units." <code>"30 * * * *"</code> would run only at minute 30 of every hour (once per hour).
         </div>
       </details>
@@ -3622,14 +3622,14 @@ spec:
       <div class="mcq-question">Q3. A Job has <code>completions: 10</code> and <code>parallelism: 3</code>. How does it execute?</div>
       <ul class="mcq-options">
         <li>A) 10 Pods run at the same time and 3 of them must succeed</li>
-        <li>B) 3 Pods run simultaneously; as each succeeds a new Pod starts — continuing until 10 total successes are recorded</li>
-        <li>C) 3 Pods run and each must complete successfully 10 times in a row</li>
-        <li>D) 10 Pods start, and the Job finishes when the first 3 complete</li>
+        <li>B) 3 Pods run and each must complete successfully 10 times in a row</li>
+        <li>C) 10 Pods start, and the Job finishes when the first 3 complete</li>
+        <li>D) 3 Pods run simultaneously; as each succeeds a new Pod starts — continuing until 10 total successes are recorded</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: D</strong><br/>
           Think of it as a work queue: <code>parallelism</code> is the number of concurrent workers, <code>completions</code> is the total items to process. 3 workers run simultaneously; when one finishes, a new one starts immediately — until the total reaches 10. This pattern is ideal for parallel batch processing.
         </div>
       </details>
@@ -3638,15 +3638,15 @@ spec:
     <div class="mcq-item">
       <div class="mcq-question">Q4. A CronJob has <code>schedule: "0 9 * * 1"</code>. When does it run?</div>
       <ul class="mcq-options">
-        <li>A) Every 9 hours on Mondays</li>
-        <li>B) Every Monday at 09:00</li>
+        <li>A) Every Monday at 09:00</li>
+        <li>B) Every 9 hours on Mondays</li>
         <li>C) On the 9th of every month at midnight</li>
         <li>D) At 01:00 every Monday and on the 9th of every month</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: A</strong><br/>
           Reading left to right: minute=0, hour=9, day-of-month=*, month=*, day-of-week=1 (Monday). So: at minute 0 of hour 9, on any day of the month, in any month, but only when the day of week is Monday → <strong>every Monday at 09:00</strong>.
         </div>
       </details>
@@ -3756,14 +3756,14 @@ roleRef:                # WHAT Role/ClusterRole to grant. Immutable after creati
       <div class="mcq-question">Q1. What is the difference between a Role and a ClusterRole?</div>
       <ul class="mcq-options">
         <li>A) Role is for admins; ClusterRole is for regular users</li>
-        <li>B) Role is namespace-scoped; ClusterRole applies cluster-wide or across all namespaces</li>
-        <li>C) ClusterRole supports more verbs than Role</li>
+        <li>B) ClusterRole supports more verbs than Role</li>
+        <li>C) Role is namespace-scoped; ClusterRole applies cluster-wide or across all namespaces</li>
         <li>D) There is no functional difference</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: C</strong><br/>
           A Role only grants permissions within the namespace where it is defined. A ClusterRole grants permissions across all namespaces or for cluster-scoped resources (like Nodes, PersistentVolumes).
         </div>
       </details>
@@ -3773,14 +3773,14 @@ roleRef:                # WHAT Role/ClusterRole to grant. Immutable after creati
       <div class="mcq-question">Q2. If you want a CI/CD pipeline (running as a ServiceAccount) to deploy to the "production" namespace, what RBAC objects do you need?</div>
       <ul class="mcq-options">
         <li>A) A ClusterRole and ClusterRoleBinding</li>
-        <li>B) A Role (in production namespace) + RoleBinding (binding the ServiceAccount to that Role)</li>
-        <li>C) Just a ServiceAccount — it has all permissions by default</li>
-        <li>D) A NetworkPolicy + RBAC Policy</li>
+        <li>B) Just a ServiceAccount — it has all permissions by default</li>
+        <li>C) A NetworkPolicy + RBAC Policy</li>
+        <li>D) A Role (in production namespace) + RoleBinding (binding the ServiceAccount to that Role)</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: D</strong><br/>
           For namespace-scoped access, use Role + RoleBinding. Using ClusterRole + ClusterRoleBinding would give the CI/CD service account access to all namespaces — more than needed. Prefer the principle of least privilege.
         </div>
       </details>
@@ -3789,15 +3789,15 @@ roleRef:                # WHAT Role/ClusterRole to grant. Immutable after creati
     <div class="mcq-item">
       <div class="mcq-question">Q3. What is a ServiceAccount in Kubernetes?</div>
       <ul class="mcq-options">
-        <li>A) A human administrator account with cluster-admin permissions</li>
-        <li>B) An identity used by Pods and applications (not humans) to authenticate with the Kubernetes API</li>
+        <li>A) An identity used by Pods and applications (not humans) to authenticate with the Kubernetes API</li>
+        <li>B) A human administrator account with cluster-admin permissions</li>
         <li>C) An external OAuth or OIDC provider for SSO</li>
         <li>D) A billing account linked to cloud resource consumption</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: A</strong><br/>
           Every Pod runs with a ServiceAccount (the <code>default</code> ServiceAccount if not specified). Kubernetes automatically mounts a token for this ServiceAccount inside the Pod at <code>/var/run/secrets/kubernetes.io/serviceaccount/token</code>. The app can use this token to call the Kubernetes API. Use RBAC to control what that ServiceAccount is allowed to do.
         </div>
       </details>
@@ -3807,14 +3807,14 @@ roleRef:                # WHAT Role/ClusterRole to grant. Immutable after creati
       <div class="mcq-question">Q4. What verbs would you include in a Role to allow a user to run <code>kubectl apply</code> and <code>kubectl delete</code>?</div>
       <ul class="mcq-options">
         <li>A) get, list, watch</li>
-        <li>B) exec, port-forward</li>
-        <li>C) create, update, patch, delete</li>
+        <li>B) create, update, patch, delete</li>
+        <li>C) exec, port-forward</li>
         <li>D) bind, escalate</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: C</strong><br/>
+          <strong>Answer: B</strong><br/>
           <code>kubectl apply</code> needs <code>create</code> (new objects) + <code>update</code>/<code>patch</code> (existing objects). <code>kubectl delete</code> needs <code>delete</code>. Read-only operations use <code>get</code>, <code>list</code>, <code>watch</code>. Grant only what is needed — a developer who only reads logs needs <code>get</code>, <code>list</code>, and <code>pods/log</code>, not delete.
         </div>
       </details>
@@ -3825,13 +3825,13 @@ roleRef:                # WHAT Role/ClusterRole to grant. Immutable after creati
       <ul class="mcq-options">
         <li>A) Full cluster-admin access</li>
         <li>B) Read access to all objects in its namespace</li>
-        <li>C) Very limited access — essentially nothing beyond discovering the API itself</li>
-        <li>D) It depends entirely on the cloud provider</li>
+        <li>C) It depends entirely on the cloud provider</li>
+        <li>D) Very limited access — essentially nothing beyond discovering the API itself</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: C</strong><br/>
+          <strong>Answer: D</strong><br/>
           In a standard cluster, the <code>default</code> ServiceAccount has no RBAC bindings and therefore cannot perform any meaningful operations on cluster resources. This is intentional — the principle of least privilege. You must explicitly create RoleBindings to grant your app the specific permissions it needs.
         </div>
       </details>
@@ -3840,15 +3840,15 @@ roleRef:                # WHAT Role/ClusterRole to grant. Immutable after creati
     <div class="mcq-item">
       <div class="mcq-question">Q6. What is the "principle of least privilege" in the context of Kubernetes RBAC?</div>
       <ul class="mcq-options">
-        <li>A) Give every developer cluster-admin access to avoid friction</li>
-        <li>B) Grant only the minimum permissions necessary for a user or service to perform its specific job — no more, no less</li>
+        <li>A) Grant only the minimum permissions necessary for a user or service to perform its specific job — no more, no less</li>
+        <li>B) Give every developer cluster-admin access to avoid friction</li>
         <li>C) Use ClusterRoles for all permissions to simplify management</li>
         <li>D) Limit RBAC to only the production namespace</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: A</strong><br/>
           Least privilege is a security principle: if an app only needs to read ConfigMaps, don't give it permission to delete Secrets. If a user only needs to view Pods, don't give them deployment permissions. This limits the blast radius of a compromised token or insider threat. Regularly audit your RBAC bindings.
         </div>
       </details>
@@ -4004,15 +4004,15 @@ helm uninstall my-postgres</code></pre>
     <div class="mcq-item">
       <div class="mcq-question">Q3. How do you override a Helm chart's default configuration at install time without modifying the chart itself?</div>
       <ul class="mcq-options">
-        <li>A) Edit the template files in the chart directory directly</li>
-        <li>B) Use <code>--set key=value</code> flags or <code>-f my-values.yaml</code> with <code>helm install</code> or <code>helm upgrade</code></li>
-        <li>C> Create a Kubernetes ConfigMap with the same name as values.yaml</li>
+        <li>A) Use <code>--set key=value</code> flags or <code>-f my-values.yaml</code> with <code>helm install</code> or <code>helm upgrade</code></li>
+        <li>B) Edit the template files in the chart directory directly</li>
+        <li>C) C> Create a Kubernetes ConfigMap with the same name as values.yaml</li>
         <li>D) Run <code>helm values override &lt;chart&gt;</code></li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: A</strong><br/>
           Helm is designed so you never need to edit a chart's source to customise it. Use <code>--set replicaCount=5</code> for simple overrides, or <code>-f production-values.yaml</code> for a full set of environment-specific settings. This keeps the upstream chart upgradeable without merge conflicts.
         </div>
       </details>
@@ -4039,14 +4039,14 @@ helm uninstall my-postgres</code></pre>
       <div class="mcq-question">Q5. Where does Helm store release history inside the Kubernetes cluster?</div>
       <ul class="mcq-options">
         <li>A) In a dedicated <code>helm-releases</code> namespace as Deployments</li>
-        <li>B) As Kubernetes Secrets (base64-encoded) in the same namespace as the release</li>
-        <li>C) In etcd directly as raw key-value pairs</li>
+        <li>B) In etcd directly as raw key-value pairs</li>
+        <li>C) As Kubernetes Secrets (base64-encoded) in the same namespace as the release</li>
         <li>D) In a file on the machine where you ran <code>helm install</code></li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: C</strong><br/>
           Helm 3 stores each release revision as a Kubernetes Secret of type <code>helm.sh/release.v1</code> in the release's namespace. Each upgrade creates a new Secret, and <code>helm history &lt;release&gt;</code> reads these Secrets to show the revision history. This means Helm state lives in-cluster with no external storage needed.
         </div>
       </details>
@@ -4056,14 +4056,14 @@ helm uninstall my-postgres</code></pre>
       <div class="mcq-question">Q6. What is the difference between <code>helm upgrade</code> and <code>helm upgrade --install</code>?</div>
       <ul class="mcq-options">
         <li>A) They are identical — <code>--install</code> is just a legacy flag</li>
-        <li>B) <code>helm upgrade</code> fails if the release doesn't exist yet; <code>--install</code> creates the release if it doesn't exist, making it safe to use in CI/CD pipelines</li>
-        <li>C> <code>--install</code> upgrades the Helm CLI itself, not the chart</li>
-        <li>D) <code>--install</code> forces a reinstall even if nothing has changed</li>
+        <li>B) C> <code>--install</code> upgrades the Helm CLI itself, not the chart</li>
+        <li>C) <code>--install</code> forces a reinstall even if nothing has changed</li>
+        <li>D) <code>helm upgrade</code> fails if the release doesn't exist yet; <code>--install</code> creates the release if it doesn't exist, making it safe to use in CI/CD pipelines</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
-          <strong>Answer: B</strong><br/>
+          <strong>Answer: D</strong><br/>
           <code>helm upgrade --install my-release my-chart</code> is the idiomatic CI/CD command: if the release exists it upgrades it; if not it creates it. This makes your pipeline script work for both first-time deployments and subsequent updates without needing separate install and upgrade commands.
         </div>
       </details>
