@@ -1084,7 +1084,7 @@ ports:                # this is a "sequence" (list), items start with a dash
     <div class="mcq-item">
       <div class="mcq-question">Q3. The kubelet runs on:</div>
       <ul class="mcq-options">
-        <li>A) Every Worker Node</li>
+        <li>A) Every node in the cluster (worker nodes and control plane nodes)</li>
         <li>B) Only the Control Plane (master node)</li>
         <li>C) The developer's local machine</li>
         <li>D) Inside each Pod</li>
@@ -1093,7 +1093,7 @@ ports:                # this is a "sequence" (list), items start with a dash
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
           <strong>Answer: A</strong><br/>
-          The kubelet is a node-level agent. Every worker node has a kubelet that receives instructions from the API server and manages the lifecycle of Pods and containers on that specific node.
+          The kubelet is a node-level agent that runs on <em>every</em> node in the cluster — both worker nodes and control plane nodes. It receives instructions from the API server and manages the lifecycle of Pods and containers on that specific node. On control plane nodes the kubelet is responsible for running static Pods such as the API server, etcd, and the scheduler themselves.
         </div>
       </details>
     </div>
@@ -1372,13 +1372,13 @@ kubectl delete pod my-first-pod</code></pre>
         <li>A) The Pod's IP address</li>
         <li>B) Only the Pod's labels</li>
         <li>C) The YAML manifest used to create the Pod</li>
-        <li>D) The full event log, resource usage, volume mounts, environment variables, and container state details</li>
+        <li>D) The full event log, resource requests/limits, volume mounts, environment variables, and container state details</li>
       </ul>
       <details class="mcq-answer">
         <summary>See Answer &amp; Explanation</summary>
         <div class="answer-body">
           <strong>Answer: D</strong><br/>
-          <code>kubectl describe</code> is the go-to debugging command. It shows the full spec, current status, container states, resource requests/limits, mounted volumes, env vars, and — most importantly — the <em>Events</em> section at the bottom, which explains exactly why a Pod might be stuck or failing.
+          <code>kubectl describe</code> is the go-to debugging command. It shows the full spec, current status, container states, resource requests/limits, mounted volumes, env vars, and — most importantly — the <em>Events</em> section at the bottom, which explains exactly why a Pod might be stuck or failing. Note: live CPU/memory <em>usage</em> requires <code>kubectl top pod</code> (needs the Metrics Server installed).
         </div>
       </details>
     </div>
@@ -4006,7 +4006,7 @@ helm uninstall my-postgres</code></pre>
       <ul class="mcq-options">
         <li>A) Use <code>--set key=value</code> flags or <code>-f my-values.yaml</code> with <code>helm install</code> or <code>helm upgrade</code></li>
         <li>B) Edit the template files in the chart directory directly</li>
-        <li>C) C> Create a Kubernetes ConfigMap with the same name as values.yaml</li>
+        <li>C) Create a Kubernetes ConfigMap with the same name as values.yaml</li>
         <li>D) Run <code>helm values override &lt;chart&gt;</code></li>
       </ul>
       <details class="mcq-answer">
@@ -4056,7 +4056,7 @@ helm uninstall my-postgres</code></pre>
       <div class="mcq-question">Q6. What is the difference between <code>helm upgrade</code> and <code>helm upgrade --install</code>?</div>
       <ul class="mcq-options">
         <li>A) They are identical — <code>--install</code> is just a legacy flag</li>
-        <li>B) C> <code>--install</code> upgrades the Helm CLI itself, not the chart</li>
+        <li>B) <code>--install</code> upgrades the Helm CLI itself, not the chart</li>
         <li>C) <code>--install</code> forces a reinstall even if nothing has changed</li>
         <li>D) <code>helm upgrade</code> fails if the release doesn't exist yet; <code>--install</code> creates the release if it doesn't exist, making it safe to use in CI/CD pipelines</li>
       </ul>
